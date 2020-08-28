@@ -4,7 +4,7 @@ jobs:
   gradle:
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [macOS-latest, windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout the repo
