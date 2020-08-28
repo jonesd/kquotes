@@ -2,7 +2,7 @@ plugins {
     kotlin("multiplatform") version "1.4.0"
 }
 group = "com.intelliware"
-version = "0.1-SNAPSHOT"
+version = "0.1"
 
 repositories {
     mavenCentral()
