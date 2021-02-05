@@ -29,7 +29,7 @@ kotlin {
         val nativeMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.1.0")
-                implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.1")
             }
         }
         val nativeTest by getting
