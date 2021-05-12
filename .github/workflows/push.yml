@@ -10,7 +10,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Validate Gradle Wrapper
-        uses: gradle/wrapper-validation-action@v1
+        uses: gradle/wrapper-validation-action@v1.0.3
       - name: Cache intellij download
         uses: actions/cache@v2.1.4
         with:
