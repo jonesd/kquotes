@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.4.0"
+    kotlin("multiplatform") version "1.7.20"
 }
 group = "com.intelliware"
 version = "0.1"
