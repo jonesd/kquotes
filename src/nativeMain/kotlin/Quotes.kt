@@ -1,12 +1,9 @@
-import kotlinx.datetime.Clock
-import kotlinx.datetime.LocalDate
-import kotlinx.datetime.TimeZone
-import kotlinx.datetime.todayAt
+import kotlinx.datetime.*
 import kotlin.random.Random
 
 class Quotes {
     fun quoteOfTheDay(): Quote {
-        val today: LocalDate = Clock.System.todayAt(TimeZone.currentSystemDefault())
+        val today: LocalDate = Clock.System.todayIn(TimeZone.currentSystemDefault())
         return quoteCatalogue[today.dayOfYear % quoteCatalogue.size]
     }
 

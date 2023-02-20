@@ -1,8 +1,8 @@
 plugins {
-    kotlin("multiplatform") version "1.4.0"
+    kotlin("multiplatform") version "1.8.10"
 }
 group = "com.intelliware"
-version = "0.1"
+version = "0.2"
 
 repositories {
     mavenCentral()
@@ -28,8 +28,8 @@ kotlin {
     sourceSets {
         val nativeMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.1.0")
-                implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-cli:0.3.5")
             }
         }
         val nativeTest by getting
