@@ -32,11 +32,11 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build -i
-      - uses: actions/upload-artifact@v3.1.0
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: reports-${{ matrix.os }}
           path: ${{ github.workspace }}/build/reports/**/*
-      - uses: actions/upload-artifact@v3.1.0
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: release-${{ matrix.os }}
           path: ${{ github.workspace }}/build/bin/native/releaseExecutable/*
